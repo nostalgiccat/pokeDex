@@ -1,25 +1,64 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: rgb(154, 52, 52);
+    background: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
+    background-repeat: no-repeat;
+    background-position: calc();
+}
+
+#top-section {
+    display:  inline-block;
+    background-color: #ffffff;
+    width: 50%;
+    border-radius: 5%;
+    padding: 3px;
+    
+}
+
+#top-section:hover {
+    background-color: bisque;
 }
 
 #pokemon-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8px;
+    position: absolute;
+    left: 270px;
+    top: 130px;
 }
 
+/* #pokemon-list:hover {
+    background-color: bisque;
+} */
+
 .pokemon-card {
-    width: 200px;
-    border: 1px solid #ccc;
+    width: 180px;
+    height: 180px;
     margin: 10px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    /* background-color: blue; */
+
 }
 
-.pokemon-card:hover {
-    background-color: bisque;
+#buttons {
+      position: absolute;
+      top: 441px; left: 476px;
 }
+
+#next-button {
+    background-color: hsl(220deg 1.68% 35.1%);
+    /* border: 1px 1px 1px black; */
+    border-top: 1px solid black;
+    border-right-color: 1px solid black;
+    border-bottom: 1px solid black; 
+}
+
+
 .pokemon-card img {
     width: 100px;
     height: 100px;
