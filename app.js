@@ -40,13 +40,17 @@ function fetchPokemon() {
 
 
 
-document.addEventListener('DOMContentLoaded', fetchPokemon());
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById("page-number").innerText = `Page ${pageNumber}`;
+    fetchPokemon();
+});
 
 
 document.getElementById("next").addEventListener("click", function(){
     console.log("next");
     offset = offset + 20;
-
+    pageNumber++; // Increment the page number 
+    document.getElementById("page-number").innerText = `Page ${pageNumber}`
     fetchPokemon()
 
 })
@@ -55,7 +59,8 @@ document.getElementById("previous").addEventListener("click", function(){
     console.log("previous");
     if (offset >= 20) {
         offset = offset-20;
-
+        pageNumber--; // Decrease page number
+        document.getElementById("page-number").innerText = `Page ${pageNumber}`
         fetchPokemon();
     }
 })

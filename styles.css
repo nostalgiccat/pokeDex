@@ -24,3 +24,7 @@ body {
     width: 100px;
     height: 100px;
 }
+
+#page-number {
+    padding-top: 5px;
+}
