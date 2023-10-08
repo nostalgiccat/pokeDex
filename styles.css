@@ -1,10 +1,12 @@
+
 body {
     font-family: 'Press Start 2P' ,Arial, sans-serif;
-    text-align: center;
+    /* text-align: center; */
     background-color: rgb(154, 52, 52);
-    background: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
+    background-image: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
     background-repeat: no-repeat;
-    background-position: calc();
+    background-color: #ffffff;
+    
 
 }
 
