@@ -8,6 +8,8 @@ function fetchPokemon() {
             const pokemonArray = data.results;
             const pokemonList = document.getElementById('pokemon-list');
             pokemonList.innerHTML = '';
+            const idSection = document.getElementById('id-card');
+            idSection.innerHTML = ''; 
 
             // Create an array of promises
             const arrayOfPromises = pokemonArray.map(pokemon => fetch(pokemon.url).then(response => response.json()));
@@ -21,9 +23,13 @@ function fetchPokemon() {
                     // Create and append the cards
                     sortedPokeData.forEach(pokeData => {
                         const pokemonCard = document.createElement('div');
+                        const idCard = document.createElement('div')
+
                         pokemonCard.className = 'pokemon-card';
+                        idCard.className = 'id-card'; 
+
                         pokemonCard.innerHTML = `
-                            ${pokeData.id}
+                           
                             </br>
                             ${pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)}
                             </br>
@@ -35,8 +41,15 @@ function fetchPokemon() {
                             <p>Defense: ${pokeData.stats[2].base_stat}</p>
                             <p>Special Attack: ${pokeData.stats[3].base_stat}</p>
                             ${pokeData.types[0].type.name}
-                        `;
+                        `
+                        idCard.innerHTML = `
+                            ${pokeData.id}
+                        `
+                        ;
                         pokemonList.appendChild(pokemonCard);
+                        idSection.appendChild(idCard);
+                        
+                        ;
                     });
                 });
         });
@@ -59,9 +72,9 @@ document.getElementById("next-button").addEventListener("click", function(){
 
 })
 
-document.getElementById("previous").addEventListener("click", function(){
+document.getElementById("previous-button").addEventListener("click", function(){
     console.log("previous");
-    if (offset > 1) {
+    if (offset >= 1) {
         offset = offset-1;
         pageNumber--; // Decrease page number
         // document.getElementById("page-number").innerText = `Page ${pageNumber}`

@@ -1,10 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P' ,Arial, sans-serif;
     text-align: center;
     background-color: rgb(154, 52, 52);
     background: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
     background-repeat: no-repeat;
     background-position: calc();
+
 }
 
 #top-section {
@@ -16,9 +17,9 @@ body {
     
 }
 
-#top-section:hover {
+/* #top-section:hover {
     background-color: bisque;
-}
+} */
 
 #pokemon-list {
     display: flex;
@@ -26,12 +27,14 @@ body {
     justify-content: center;
     padding-top: 8px;
     position: absolute;
-    left: 270px;
-    top: 130px;
+    left: 267px;
+    top: 127px;
+    margin: 0;
 }
 
 /* #pokemon-list:hover {
     background-color: bisque;
+    color: black;
 } */
 
 .pokemon-card {
@@ -42,19 +45,28 @@ body {
     text-align: center;
     color: white;
     /* background-color: blue; */
+    border: thick solid black;  
 
-}
-
-#buttons {
-      position: absolute;
-      top: 441px; left: 476px;
 }
 
 #next-button {
+      position: absolute;
+      top: 441px; left: 476px;
+      border-right-color: 1px solid black;
+}
+
+#previous-button {
+    position: absolute;
+    top: 441px; left: 434px;
+    border-right: 0;
+    border-left: 1px solid black;
+}
+
+#next-button, #previous-button{
     background-color: hsl(220deg 1.68% 35.1%);
     /* border: 1px 1px 1px black; */
     border-top: 1px solid black;
-    border-right-color: 1px solid black;
+   
     border-bottom: 1px solid black; 
 }
 
@@ -67,3 +79,23 @@ body {
 #page-number {
     padding-top: 5px;
 }
+
+.id-card {
+    font-size: 36px;
+    position: absolute; 
+    top: 455px;
+    left: 320px;
+    display: inline-block;
+}
+
+
+/* Media Queries */
+
+ @media (max-width: 768px) {
+    html {
+        position: relative; 
+        right: 160px;
+        top: 30px;
+    }
+  }
+ 
