@@ -6,6 +6,8 @@ body {
     background-image: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
     background-repeat: no-repeat;
     background-color: #ffffff;
+    background-position: relative;
+    left: 20%;
     
 
 }
@@ -17,6 +19,13 @@ body {
     border-radius: 5%;
     padding: 3px;
     
+}
+
+#data {
+    position: relative;
+    top: -7px;
+    right: 6px;
+
 }
 
 /* #top-section:hover {
