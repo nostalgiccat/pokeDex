@@ -98,4 +98,27 @@ body {
         top: 30px;
     }
   }
+
+  @media (min-width: 769px) and (max-width: 1284px) {
+    /* Styles for medium screens like tablets and some phones in landscape */
+    html {
+        position: relative; 
+        right: 160px;
+        top: 30px;
+    }
+  }
  
+  @media (min-width: 1285px) {
+    html {
+        position: relative; 
+        right: 160px;
+        top: 30px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
