@@ -9,12 +9,23 @@ body {
     font-family: 'Press Start 2P' ,Arial, sans-serif;
     /* text-align: center; */
     background-color: rgb(154, 52, 52);
-    background-image: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
+    background: url("https://cdn.dribbble.com/userupload/3875672/file/original-42f52449520e8e7940c668566888d84f.png?resize=752x");
     background-repeat: no-repeat;
     background-color: #ffffff;
-    background-position: relative;
-    left: 20%;
+    background-position: absolute;
+    display: inline-block;
+    width: 100%;
+
 }
+
+body {
+    overflow-x: auto;  /* Enables horizontal scrolling */
+  }
+  
+  .body {
+    width: 2000px;  /* Width greater than the viewport */
+  }
+  
 
 #top-section {
     display:  inline-block;
@@ -25,10 +36,34 @@ body {
     
 }
 
-#data {
-    position: relative;
-   
+#welcome {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 100px;
+    -webkit-text-stroke: 4px #3758b0; /* width and color */
+    /* text-shadow: -8px 0 #3758b0, 0 8px #3758b0, 8px 0 #3758b0, 0 -8px #3758b0; */
+    color: yellow;
+    position: fixed;
+    right: 700px; 
+    top: 350px;
 }
+
+.search-function {
+    position: fixed;
+    left: 550px;
+    
+}
+
+#search img{
+    width: 30px;
+    position: fixed;
+    left: 268px;
+    top: 60px;
+
+}
+#search img:active {
+    width: 50px;
+}
+/* #search img: */
 
 /* #top-section:hover {
     background-color: bisque;
@@ -103,6 +138,7 @@ body {
 
 
 
+  
   
   
   

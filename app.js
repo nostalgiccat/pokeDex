@@ -82,3 +82,21 @@ document.getElementById("previous-button").addEventListener("click", function(){
     }
 })
 
+const searchButton = document.getElementById("search-button");
+const searchFunction = document.getElementById("search-section");
+
+searchButton.addEventListener("click", function() {
+    if (searchFunction.classList.contains("search-function")) {
+        searchFunction.classList.remove("search-function");
+        searchFunction.innerHTML = "";
+    }
+    else {
+        searchFunction.classList.add("search-function");
+        searchFunction.innerHTML= `
+                <label for="search">Search for a Pokemon: </label>
+                <input type="search" id="search-button">
+                <button>Search</button>
+                
+        `;
+    }
+});
