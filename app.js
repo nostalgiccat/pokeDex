@@ -81,3 +81,4 @@ document.getElementById("previous-button").addEventListener("click", function(){
         fetchPokemon();
     }
 })
+

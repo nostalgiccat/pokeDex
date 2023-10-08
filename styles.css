@@ -1,3 +1,9 @@
+/* Reset some basic elements */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
 
 body {
     font-family: 'Press Start 2P' ,Arial, sans-serif;
@@ -8,8 +14,6 @@ body {
     background-color: #ffffff;
     background-position: relative;
     left: 20%;
-    
-
 }
 
 #top-section {
@@ -23,9 +27,7 @@ body {
 
 #data {
     position: relative;
-    top: -7px;
-    right: 6px;
-
+   
 }
 
 /* #top-section:hover {
