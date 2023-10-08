@@ -109,11 +109,14 @@ body {
   }
  
   @media (min-width: 1285px) {
+    /* Styles for large screens like iPhone 15 Pro Max */
     html {
         position: relative; 
         right: 160px;
         top: 30px;
     }
+  
+  
   }
   
   
